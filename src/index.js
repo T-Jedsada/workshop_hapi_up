@@ -1,5 +1,6 @@
 const Hapi = require('hapi');
 const mockMovie = require('./mock_movie');
+const mockPlace = require('./mock_place');
 
 const server = new Hapi.Server();
 server.connection({
@@ -11,6 +12,14 @@ server.route({
     path: '/movie',
     handler: function (request, reply) {
         reply(mockMovie);
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/place',
+    handler: function (request, reply) {
+        reply(mockPlace);
     }
 });
 
