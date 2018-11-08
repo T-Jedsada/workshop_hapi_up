@@ -16,7 +16,7 @@ const mock_movie = {
         },
         {
             "title": "Guardians of the Galaxy Vol. 2",
-            "image_url": "http://image.tmdb.org/t/p/w780/vc8bCGjdVp0UbMNLzHnHSLRbBWQ.jpg",
+            "image_url": "https://images-eu.ssl-images-amazon.com/images/I/61S1EYs6daL._SS500.jpg",
             "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage."
         },
         {
