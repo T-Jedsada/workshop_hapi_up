@@ -4,7 +4,12 @@ const mockPlace = require('./mock_place');
 
 const server = new Hapi.Server();
 server.connection({
-    port: process.env.PORT || 3000
+    port: process.env.PORT || 3000,
+    routes: {
+        cors: {
+            origin: ['*']
+        }
+    }
 });
 
 server.route({
